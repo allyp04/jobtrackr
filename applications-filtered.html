@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrackr | Search Applications</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <a class="logo" href="index.html">JobTrackr</a>
+
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="add-application.html">Add Application</a>
+            <a href="applications-filtered.html">Search</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Search Applications</h1>
+
+    <p class="page-description">
+        Search your saved applications by company.
+    </p>
+
+    <section>
+        <h2>Find Applications</h2>
+
+        <form
+            class="search-form"
+            action="applications-filtered.html"
+            method="get">
+
+            <div class="form-group">
+                <label for="search">Search</label>
+
+                <input
+                    type="search"
+                    id="search"
+                    name="q"
+                    placeholder="Try 'Google'"
+                    required>
+            </div>
+
+            <button class="save-button" type="submit">
+                Search
+            </button>
+        </form>
+    </section>
+
+    <section id="search-results">
+        <h2>Search Results</h2>
+
+        <!-- Search results are generated with jQuery. -->
+        <div id="results-content"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 JobTrackr</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

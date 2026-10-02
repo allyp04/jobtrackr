@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrackr | Application Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <a class="logo" href="index.html">JobTrackr</a>
+
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="add-application.html">Add Application</a>
+            <a href="applications-filtered.html">Search</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Application Details</h1>
+
+    <section class="details-section">
+        <h2>Google</h2>
+
+        <div class="application-info">
+            <div>
+                <h3>Position</h3>
+                <p>Software Engineer Intern</p>
+            </div>
+
+            <div>
+                <h3>Deadline</h3>
+                <p>October 15, 2026</p>
+            </div>
+
+            <div>
+                <h3>Status</h3>
+                <p id="current-status">Applied</p>
+            </div>
+        </div>
+
+        <div class="notes-section">
+            <h3>Interview Notes</h3>
+            <p>
+                Submitted application online. Review technical interview
+                preparation before the next stage of the application process.
+            </p>
+        </div>
+
+        <div class="status-update-section">
+            <label for="status-select">
+                <strong>Update Status</strong>
+            </label>
+
+            <select id="status-select">
+                <option value="Applied" selected>Applied</option>
+                <option value="Interviewing">Interviewing</option>
+                <option value="Offered">Offered</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+
+            <!-- JavaScript adds the status confirmation here. -->
+            <div id="status-message"></div>
+        </div>
+
+        <div class="details-actions">
+            <a class="primary-button" href="add-application.html">
+                Edit Application
+            </a>
+
+            <button class="delete-button" type="button">
+                Delete Application
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 JobTrackr</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

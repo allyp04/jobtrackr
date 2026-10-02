@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrackr | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <a class="logo" href="index.html">JobTrackr</a>
+
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="add-application.html">Add Application</a>
+            <a href="applications-filtered.html">Search</a>
+        </nav>
+
+        <form class="header-search" action="applications-filtered.html" method="get">
+            <label for="header-search-input" class="visually-hidden">
+                Search applications
+            </label>
+            <input
+                type="search"
+                id="header-search-input"
+                name="q"
+                placeholder="Try 'Google'"
+                required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <h1>Welcome, Ally</h1>
+
+    <section>
+        <h2>Upcoming Deadlines</h2>
+
+        <div class="deadline-item">
+            <div>
+                <h3>Google</h3>
+                <p>Software Engineer Intern</p>
+            </div>
+            <p><strong>October 15, 2026</strong></p>
+        </div>
+
+        <div class="deadline-item">
+            <div>
+                <h3>Apple</h3>
+                <p>Cloud Engineer Intern</p>
+            </div>
+            <p><strong>October 28, 2026</strong></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Status Summary</h2>
+
+        <div class="status-summary">
+            <div>
+                <h3>Applied</h3>
+                <p>14</p>
+            </div>
+
+            <div>
+                <h3>Interviewing</h3>
+                <p>2</p>
+            </div>
+
+            <div>
+                <h3>Offered</h3>
+                <p>5</p>
+            </div>
+
+            <div>
+                <h3>Rejected</h3>
+                <p>3</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Quick Actions</h2>
+
+        <div class="quick-actions">
+            <a href="add-application.html">Add New Application</a>
+            <a href="applications.html">View All Applications</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 JobTrackr</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

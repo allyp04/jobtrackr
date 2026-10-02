@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrackr | Applications</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<!-- Image sources:
+     Apple logo: https://www.stickpng.com/img/icons-logos-emojis/tech-companies/apple-official-logo
+     Google logo: https://www.figma.com/community/file/1386104594751427405/google-g-logo
+-->
+
+<header>
+    <div class="header-container">
+        <a class="logo" href="index.html">JobTrackr</a>
+
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="add-application.html">Add Application</a>
+            <a href="applications-filtered.html">Search</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-heading">
+        <div>
+            <h1>My Applications</h1>
+            <p>View and manage your saved job applications.</p>
+        </div>
+
+        <a class="primary-button" href="add-application.html">
+            Add New Application
+        </a>
+    </div>
+
+    <section>
+        <h2>Applications</h2>
+
+        <!-- Confirmation messages created by JavaScript appear here. -->
+        <div id="application-message"></div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img
+                                class="company-logo"
+                                src="images/google-logo.png"
+                                alt="Google logo">
+                            Google
+                        </td>
+                        <td>Software Engineer Intern</td>
+                        <td>October 15, 2026</td>
+                        <td>Applied</td>
+                        <td>
+                            <a href="application-details.html">View</a>
+                            <a href="add-application.html">Edit</a>
+                            <button
+                                class="delete-row-button"
+                                type="button">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img
+                                class="company-logo"
+                                src="images/apple-logo.png"
+                                alt="Apple logo">
+                            Apple
+                        </td>
+                        <td>Cloud Engineer Intern</td>
+                        <td>October 28, 2026</td>
+                        <td>Interviewing</td>
+                        <td>
+                            <a href="application-details.html">View</a>
+                            <a href="add-application.html">Edit</a>
+                            <button
+                                class="delete-row-button"
+                                type="button">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>GitHub</td>
+                        <td>Technical Intern</td>
+                        <td>November 10, 2026</td>
+                        <td>Applied</td>
+                        <td>
+                            <a href="application-details.html">View</a>
+                            <a href="add-application.html">Edit</a>
+                            <button
+                                class="delete-row-button"
+                                type="button">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 JobTrackr</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

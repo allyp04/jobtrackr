@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrackr | Add Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <a class="logo" href="index.html">JobTrackr</a>
+
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="add-application.html">Add Application</a>
+            <a href="applications-filtered.html">Search</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Add New Application</h1>
+
+    <p class="page-description">
+        Enter the details for a new job or internship application.
+    </p>
+
+    <section class="form-section">
+        <h2>Application Information</h2>
+
+        <form action="applications.html">
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position</label>
+                <input
+                    type="text"
+                    id="position"
+                    name="position"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <input
+                    type="date"
+                    id="deadline"
+                    name="deadline">
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status</label>
+
+                <select id="status" name="status">
+                    <option value="applied">Applied</option>
+                    <option value="interviewing">Interviewing</option>
+                    <option value="offered">Offered</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes</label>
+
+                <textarea
+                    id="notes"
+                    name="notes"
+                    rows="5"></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button class="save-button" type="submit">
+                    Save Application
+                </button>
+
+                <a href="applications.html">Cancel</a>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 JobTrackr</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
